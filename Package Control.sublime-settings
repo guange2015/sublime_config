@@ -1,0 +1,18 @@
+{
+	"auto_upgrade_last_run": 1343801948,
+	"installed_packages":
+	[
+		"Alignment",
+		"BeautifyRuby",
+		"Capybara Snippets",
+		"CoffeeScript",
+		"ERB Insert and Toggle Commands",
+		"Gist",
+		"Markdown Preview",
+		"Package Control",
+		"Rails Related Files",
+		"RSpec",
+		"Simple Rails Navigator",
+		"Theme - Aqua"
+	]
+}

@@ -1,0 +1,13 @@
+{
+	"color_scheme": "Packages/Default/tmTheme/Railscasts 2.tmTheme",
+	"font_size": 16.0,
+	// The number of spaces a tab is considered equal to
+	"tab_size": 2,
+
+  "font_face": "Monaco",
+
+	// Set to true to insert spaces when tab is pressed
+	"translate_tabs_to_spaces": true,
+  "line_numbers": true,
+  "auto_complete": false
+}

@@ -1,0 +1,28 @@
+[
+	{ "keys": ["super+;"], "command": "auto_complete" },
+	{ "keys": ["super+;"], "command": "replace_completion_with_auto_complete", "context":
+		[
+			{ "key": "last_command", "operator": "equal", "operand": "insert_best_completion" },
+			{ "key": "setting.tab_completion", "operator": "equal", "operand": true }
+		]
+	},
+	//按textmate的方案选tab页
+	//{ "keys": ["super+shift+left"], "command": "prev_view" },
+	//{ "keys": ["super+shift+right"], "command": "next_view" },
+	//先中括号中的内容
+	{ "keys": ["ctrl+w"], "command": "expand_selection", "args": {"to": "brackets"} },
+	{ "keys": ["super+ctrl+m"], "command": "list_rails_models" },
+	{ "keys": ["super+ctrl+c"], "command": "list_rails_controllers" },
+	{ "keys": ["super+ctrl+v"], "command": "list_rails_views" },
+	{ "keys": ["super+ctrl+i"], "command": "list_rails_javascripts" },
+	{ "keys": ["super+ctrl+y"], "command": "list_rails_stylesheets" },
+
+	{ "keys": ["ctrl+shift+."], "command": "erb" },
+	
+	{ "keys": ["ctrl+shift+z"], "command": "run_remote_cmd" },
+	{ "keys": ["ctrl+shift+l"], "command": "run_remote_test_at_line" },
+  { "keys": ["ctrl+shift+x"], "command": "run_remote_test" },
+
+  { "keys": ["command+shift+r"], "command": "run_terminal_test" },
+  { "keys": ["super+alt+a"], "command": "alignment" }
+]
