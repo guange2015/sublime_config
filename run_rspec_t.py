@@ -2,6 +2,8 @@ import sublime
 import sublime_plugin
 import os, errno
 import re
+import subprocess as sub
+import shlex
 
 def get_twin_path(path):
   spec_file = path.find("/spec/") >= 0
@@ -64,8 +66,6 @@ class OpenRspecFileCommand(sublime_plugin.WindowCommand):
       twin_file.write("require \"spec_helper\"\n\ndescribe " + constant_name + " do\nend")
     twin_file.close()
 
-    print(path)
-
     view = window.open_file(twin_file)
     self.views.append(view)
 
@@ -106,21 +106,24 @@ class RunTerminalTestCommand(sublime_plugin.TextCommand):
         path = twin_path
       else:
         return sublime.error_message("You're not in a spec, bro.")
-    print ("path = "+path) 
+    
     root_path = re.sub("\/spec\/.*", "", path)
-    print("rootpath = "+root_path)
+    
     if single:
       line_number, column = self.view.rowcol(self.view.sel()[0].begin())
       line_number += 1
       path += ":" + str(line_number)
 
-    self.run_in_terminal('cd ' + root_path)
-    self.run_in_terminal('bundle exec rspec ' + path + ' --drb')
+    self.run_in_terminal("cd " + root_path)
+    self.run_in_terminal("bundle exec rspec " + path + ' --drb')
+
+  def run_system_command(self, commands):
+    sub.call(commands, shell=True)
 
   def run_in_terminal(self, command):
     osascript_command = 'osascript '
     osascript_command += '"' + sublime.packages_path() + '/User/run_command.applescript"'
     osascript_command += ' "' + command + '"'
     osascript_command += ' "Ruby Tests"'
-    print(osascript_command)
-    print os.system(osascript_command)
+    # os.system(osascript_command)
+    self.run_system_command(osascript_command)
