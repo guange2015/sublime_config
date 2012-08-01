@@ -23,6 +23,7 @@
 	{ "keys": ["ctrl+shift+l"], "command": "run_remote_test_at_line" },
   { "keys": ["ctrl+shift+x"], "command": "run_remote_test" },
 
-  { "keys": ["command+shift+r"], "command": "run_terminal_test" },
+  { "keys": ["super+r"], "command": "run_terminal_test" },
+  { "keys": ["super+shift+r"], "command": "run_terminal_test", "args": {"single": true} },
   { "keys": ["super+alt+a"], "command": "alignment" }
 ]
