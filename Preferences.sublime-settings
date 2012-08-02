@@ -8,10 +8,8 @@
 		"Vintage"
 	],
 	"line_numbers": true,
+	"overlay_scroll_bars": "disable",
 	"tab_size": 2,
 	"theme": "AppKit.sublime-theme",
-	"translate_tabs_to_spaces": true,
-	// Valid values are “system”, “enabled” and “disabled”
-	// 水平垂直滚动条：system和disabled为默认显示方式，enabled为自动隐藏显示
-	"overlay_scroll_bars": "disable"
+	"translate_tabs_to_spaces": true
 }

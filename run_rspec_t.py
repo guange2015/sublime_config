@@ -99,7 +99,7 @@ class OpenRspecFileCommand(sublime_plugin.WindowCommand):
 class RunTerminalTestCommand(sublime_plugin.TextCommand):
   def run(self, edit, single=False):
     path = self.view.file_name()
-    
+    self.view.run_command('save')
     if path.find("/spec/") < 0:
       twin_path = get_twin_path(path)
       if os.path.exists(twin_path):
