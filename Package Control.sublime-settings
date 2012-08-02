@@ -1,5 +1,5 @@
 {
-	"auto_upgrade_last_run": 1343801948,
+	"auto_upgrade_last_run": 1343875574,
 	"installed_packages":
 	[
 		"Alignment",
@@ -8,6 +8,7 @@
 		"CoffeeScript",
 		"ERB Insert and Toggle Commands",
 		"Gist",
+		"Git",
 		"Markdown Preview",
 		"Package Control",
 		"Rails Related Files",
