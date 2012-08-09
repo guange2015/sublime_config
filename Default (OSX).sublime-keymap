@@ -25,5 +25,8 @@
 
   { "keys": ["super+r"], "command": "run_terminal_test" },
   { "keys": ["super+shift+r"], "command": "run_terminal_test", "args": {"single": true} },
-  { "keys": ["super+alt+a"], "command": "alignment" }
+  { "keys": ["super+alt+a"], "command": "alignment" },
+
+  { "keys": ["ctrl+alt+z"], "command": "ordered_files", "args": { "index": 2 }  },
+	{ "keys": ["ctrl+alt+c"], "command": "ordered_files", "args": { "index": 0 }  }
 ]

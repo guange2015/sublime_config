@@ -1,14 +1,14 @@
 {
 	"auto_complete": false,
-	"color_scheme": "Packages/Color Scheme - Default/Solarized (Light).tmTheme",
+	"color_scheme": "Packages/RailsCasts Colour Scheme/RailsCastsColorScheme.tmTheme",
 	"font_face": "Monaco",
-	"font_size": 14.0,
+	"font_size": 16.0,
 	"ignored_packages":
 	[
 		"Vintage"
 	],
 	"line_numbers": true,
-	"overlay_scroll_bars": "disable",
+	"overlay_scroll_bars": "enabled",
 	"tab_size": 2,
 	"theme": "AppKit.sublime-theme",
 	"translate_tabs_to_spaces": true

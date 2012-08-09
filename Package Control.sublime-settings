@@ -1,5 +1,5 @@
 {
-	"auto_upgrade_last_run": 1343824166,
+	"auto_upgrade_last_run": 1344518185,
 	"installed_packages":
 	[
 		"Alignment",
@@ -11,7 +11,8 @@
 		"Markdown Preview",
 		"Package Control",
 		"Rails Related Files",
-		"RSpec",
+		"RailsCasts Colour Scheme",
+		"RSpec (snippets and syntax)",
 		"SCSS",
 		"Simple Rails Navigator",
 		"Theme - Aqua",
