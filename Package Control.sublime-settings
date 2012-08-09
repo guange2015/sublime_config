@@ -8,6 +8,7 @@
 		"CoffeeScript",
 		"ERB Insert and Toggle Commands",
 		"Gist",
+		"Git",
 		"Markdown Preview",
 		"Package Control",
 		"Rails Related Files",
@@ -15,7 +16,6 @@
 		"RSpec (snippets and syntax)",
 		"SCSS",
 		"Simple Rails Navigator",
-		"Theme - Aqua",
-		"Theme - Soda"
+		"Theme - Aqua"
 	]
 }
