@@ -9,9 +9,10 @@ class OrderedFilesCommand(sublime_plugin.WindowCommand):
       OF.file_views = []
       win = self.window
       for vw in win.views():
-         head, tail = path.split(vw.file_name())
-         modified = path.getmtime(vw.file_name())
-         OF.file_views.append((tail, vw, modified))
+         if path.exists(vw.file_name()):
+            head, tail = path.split(vw.file_name())
+            modified = path.getmtime(vw.file_name())
+            OF.file_views.append((tail, vw, modified))
       if index == 0:      # sort by file name (case-insensitive)
          OF.file_views.sort(key = lambda (tail, _, Doh): tail.lower())
          win.show_quick_panel([x for (x, y, z) in OF.file_views], self.on_chosen)
