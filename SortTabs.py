@@ -9,7 +9,7 @@ class OrderedFilesCommand(sublime_plugin.WindowCommand):
       OF.file_views = []
       win = self.window
       for vw in win.views():
-         if path.exists(vw.file_name()):
+         if vw.file_name() and path.exists(vw.file_name()):
             head, tail = path.split(vw.file_name())
             modified = path.getmtime(vw.file_name())
             OF.file_views.append((tail, vw, modified))

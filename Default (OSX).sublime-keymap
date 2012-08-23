@@ -27,10 +27,13 @@
 	{ "keys": ["ctrl+shift+l"], "command": "run_remote_test_at_line" },
   { "keys": ["ctrl+shift+x"], "command": "run_remote_test" },
 
-  { "keys": ["super+r"], "command": "run_terminal_test" },
-  { "keys": ["super+shift+r"], "command": "run_terminal_test", "args": {"single": true} },
+  // { "keys": ["super+r"], "command": "run_terminal_test" },
+  // { "keys": ["super+shift+r"], "command": "run_terminal_test", "args": {"single": true} },
   { "keys": ["super+alt+a"], "command": "alignment" },
 
   { "keys": ["ctrl+alt+z"], "command": "ordered_files", "args": { "index": 2 }  },
-	{ "keys": ["ctrl+alt+c"], "command": "ordered_files", "args": { "index": 0 }  }
+	{ "keys": ["ctrl+alt+c"], "command": "ordered_files", "args": { "index": 0 }  },
+
+	{ "keys": ["super+ctrl+left"], "command": "navigation_history_back"},
+  { "keys": ["super+ctrl+right"], "command": "navigation_history_forward"}
 ]

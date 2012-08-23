@@ -1,0 +1,4 @@
+{
+	"last_test_run": "rspec spec/models/job_spec.rb -l12",
+	"last_test_working_dir": "/Users/hhuai/Documents/workspace/ruby/rails_project/practice"
+}
