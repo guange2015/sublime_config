@@ -1,5 +1,5 @@
 {
-	"auto_upgrade_last_run": 1345725729,
+	"auto_upgrade_last_run": 1346219436,
 	"installed_packages":
 	[
 		"Alignment",
@@ -11,10 +11,13 @@
 		"Git",
 		"Markdown Preview",
 		"Package Control",
+		"Python PEP8 Autoformat",
 		"Rails Related Files",
 		"RubyTest",
 		"Sass",
 		"Simple Rails Navigator",
+		"SublimeCodeIntel",
+		"sublimelint",
 		"Theme - Aqua"
 	]
 }
